@@ -112,7 +112,25 @@ public enum Keycode : uint {
   kVK_LeftArrow                 = 0x7B,
   kVK_RightArrow                = 0x7C,
   kVK_DownArrow                 = 0x7D,
-  kVK_UpArrow                   = 0x7E
+  kVK_UpArrow                   = 0x7E,
+    kMASShortcutGlyphEject = 0x23CF,
+    kMASShortcutGlyphClear = 0x2715,
+	kMASShortcutGlyphDeleteLeft = 0x232B,
+	kMASShortcutGlyphDeleteRight = 0x2326,
+    kMASShortcutGlyphLeftArrow = 0x2190,
+	kMASShortcutGlyphRightArrow = 0x2192,
+	kMASShortcutGlyphUpArrow = 0x2191,
+	kMASShortcutGlyphDownArrow = 0x2193,
+	kMASShortcutGlyphEscape = 0x238B,
+	kMASShortcutGlyphHelp = 0x003F,
+    kMASShortcutGlyphPageDown = 0x21DF,
+	kMASShortcutGlyphPageUp = 0x21DE,
+	kMASShortcutGlyphTabRight = 0x21E5,
+	kMASShortcutGlyphReturn = 0x2305,
+	kMASShortcutGlyphReturnR2L = 0x21A9,	
+	kMASShortcutGlyphPadClear = 0x2327,
+	kMASShortcutGlyphNorthwestArrow = 0x2196,
+	kMASShortcutGlyphSoutheastArrow = 0x2198
 }
 
 public enum EventModifier : ulong {
