@@ -1,3 +1,10 @@
+using System;
+
+[AttributeUsage (AttributeTargets.Method)]
+public sealed class MonoPInvokeCallbackAttribute : Attribute {
+public MonoPInvokeCallbackAttribute (Type t) {}
+}
+
 namespace Shortcut
 {
 public enum Keycode : uint {
