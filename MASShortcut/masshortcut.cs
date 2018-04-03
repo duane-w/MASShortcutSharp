@@ -1,13 +1,10 @@
-
-using MonoMac.Foundation;
-using MonoMac.ObjCRuntime;
-using MonoMac.AppKit;
+using Foundation;
+using ObjCRuntime;
+using AppKit;
 using System;
-
 
 namespace Shortcut
 {
-
 	delegate void GlobalHotkeyMonitorHandler ();
 
 	//@interface MASShortcut (Monitoring)
@@ -17,19 +14,19 @@ namespace Shortcut
 		//From Generated Property
 		//@property (nonatomic) NSUInteger keyCode;
 		[Export ("keyCode")]
-		uint KeyCode { get; set;  }
+		nuint KeyCode { get; set;  }
 
 		//@property (nonatomic) NSUInteger modifierFlags;
 		[Export ("modifierFlags")]
-		uint ModifierFlags { get; set;  }
+		nuint ModifierFlags { get; set;  }
 
 		//@property (nonatomic, readonly) UInt32 carbonKeyCode;
 		[Export ("carbonKeyCode")]
-		UInt32 CarbonKeyCode { get;  }
+		uint CarbonKeyCode { get;  }
 
 		//@property (nonatomic, readonly) UInt32 carbonFlags;
 		[Export ("carbonFlags")]
-		UInt32 CarbonFlags { get;  }
+		uint CarbonFlags { get;  }
 
 		//@property (nonatomic, readonly) NSString *keyCodeString;
 		[Export ("keyCodeString")]
@@ -58,7 +55,7 @@ namespace Shortcut
 		//+ (id)addGlobalHotkeyMonitorWithShortcut:(MASShortcut *)shortcut handler:(void (^)())handler;
 		[Static]
 		[Export ("addGlobalHotkeyMonitorWithShortcut:handler:")]
-		NSObject AddGlobalHotkeyMonitor (MASShortcut shortcut,GlobalHotkeyMonitorHandler _delegate);
+		NSObject AddGlobalHotkeyMonitor (MASShortcut shortcut, GlobalHotkeyMonitorHandler _delegate);
 
 		//+ (void)removeGlobalHotkeyMonitor:(id)monitor;
 		[Static]
@@ -67,12 +64,12 @@ namespace Shortcut
 
 		//- (id)initWithKeyCode:(NSUInteger)code modifierFlags:(NSUInteger)flags;
 		[Export ("initWithKeyCode:modifierFlags:")]
-		IntPtr Constructor (Keycode code,EventModifier modifierFlags);
+		IntPtr Constructor (nuint code, nuint modifierFlags);
 
 		//+ (MASShortcut *)shortcutWithKeyCode:(NSUInteger)code modifierFlags:(NSUInteger)flags;
 		[Static]
 		[Export ("shortcutWithKeyCode:modifierFlags:")]
-		MASShortcut ShortcutWithKeyCode (uint code,uint modifierFlags);
+		MASShortcut ShortcutWithKeyCode (nuint code, nuint modifierFlags);
 
 		//+ (MASShortcut *)shortcutWithEvent:(NSEvent *)anEvent;
 		[Static]
@@ -87,7 +84,5 @@ namespace Shortcut
 		//- (BOOL)isTakenError:(NSError **)error;
 		[Export ("isTakenError:")]
 		bool IsTakenError (out NSError error);
-
-
 	}
 }

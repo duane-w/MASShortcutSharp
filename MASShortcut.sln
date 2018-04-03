@@ -1,0 +1,38 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MASShortcut.Sample", "MASShortcut.Sample\MASShortcut.Sample.csproj", "{F16DC691-C559-468D-AADB-CD57B225D210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MASShortcut", "MASShortcut\MASShortcut.csproj", "{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		AppStore|x86 = AppStore|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F16DC691-C559-468D-AADB-CD57B225D210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.Debug|x86.Build.0 = Debug|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.Release|x86.ActiveCfg = Release|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.Release|x86.Build.0 = Release|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.AppStore|x86.ActiveCfg = Debug|Any CPU
+		{F16DC691-C559-468D-AADB-CD57B225D210}.AppStore|x86.Build.0 = Debug|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.Debug|x86.Build.0 = Debug|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.Release|x86.ActiveCfg = Release|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.Release|x86.Build.0 = Release|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.AppStore|x86.ActiveCfg = Debug|Any CPU
+		{96B3CE72-6CA0-4C87-B591-9E5F9D0C0B46}.AppStore|x86.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
